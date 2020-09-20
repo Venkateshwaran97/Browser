@@ -12,24 +12,19 @@ import android.widget.Toast;
 
 
 public class Settings extends ActionBarActivity {
-EditText ed1;
+    EditText ed1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        ed1=(EditText)findViewById(R.id.editText2);
-        ed1.setOnKeyListener(new View.OnKeyListener()
-        {
+        ed1 = (EditText) findViewById(R.id.editText2);
+        ed1.setOnKeyListener(new View.OnKeyListener() {
 
-            public boolean onKey(View v, int keyCode, KeyEvent event)
-            {
-                if (event.getAction() == KeyEvent.ACTION_DOWN)
-                {
-                    switch (keyCode)
-                    {
-
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (event.getAction() == KeyEvent.ACTION_DOWN) {
+                    switch (keyCode) {
                         case KeyEvent.KEYCODE_ENTER:
-
                             return true;
                         default:
                             break;
@@ -38,9 +33,7 @@ EditText ed1;
                 return false;
             }
         });
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -54,10 +47,6 @@ EditText ed1;
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-
-
-
-
         return super.onOptionsItemSelected(item);
     }
 }

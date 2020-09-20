@@ -12,7 +12,7 @@
         android:id="@+id/editText"
         android:singleLine="true"
         android:background="#FFFFFF"
-        android:text="http://www.google.com"
+        android:text="https://www.google.com"
 
 
         />
