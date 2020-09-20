@@ -172,10 +172,10 @@ public class MainActivity extends ActionBarActivity {
 
         if (id == R.id.action_zoom) {
             if (birthSort) {
-                item.setTitle("force zoom not enabled");
+                item.setTitle("Force Zoom Not Enabled");
                 birthSort = false;
             } else {
-                item.setTitle("force zoom enabled");
+                item.setTitle("Force Zoom Enabled");
                 birthSort = true;
             }
             setup();

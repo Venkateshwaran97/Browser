@@ -10,7 +10,7 @@
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/action_zoom"
-        android:title="Force zoom enabled"
+        android:title="Force Zoom Enabled"
         android:orderInCategory="100"
         android:showAsAction="never"/>
     <item
